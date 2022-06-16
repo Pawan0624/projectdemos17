@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 
+    <bean id="addr" class="coforgespringexamples.Address" >  
+         collaborators and configuration for this bean go here 
+        <property name="dno" value="302" />
+        <property name="street" value="MG Road" />
+        <property name="city" value="Bangalore" />
+   </bean>
+    <bean id="p" class="coforgespringexamples.Person" >  
+       
+        <property name="name" value="Praveen" />
+        <property name="address" ref="addr" />
+        
+   </bean>
+   
+   -->
+   <bean id="addr" class="coforgespringexamples.Address" scope="prototype">  
+        <constructor-arg value="411" />
+         <constructor-arg value="SP Road" />
+          <constructor-arg value="Hyderabad" />
+   </bean>
+   <bean id="p" class="coforgespringexamples.Person" >  
+        <constructor-arg value="Satish" />
+         <constructor-arg ref="addr" />
+    </bean>
+    <bean id="p1" class="coforgespringexamples.Person" >  
+       
+        <property name="name" value="Praveen" />
+        <property name="address" ref="addr" />
+        
+   </bean>
+   
+   <bean id="tutor" class="coforgespringexamples.Tutor">
+		<property name="name" value="Kiran" />
+		<property name="exp" value="19" />
+		<property name="languages">
+			<list>
+				<value>Java Full Stack</value>
+				<value>Microservices</value>
+				<value>DevOps</value>
+				<value>Angualar</value>
+				<value>Microservices</value>
+			</list>
+    	</property>
+    	<property name="degrees">
+			<set>
+				<value>BTech</value>
+				<value>MTech</value>
+				<value>PGDBM</value>
+				<value>MPhil</value>
+				<value>MTech</value>
+			</set>
+    	</property>
+    	<property name="country">
+			<map>
+				<entry key="MH" value="Maharastra" />
+				<entry key="AP" value="Andhra Pradesh" />
+				<entry key="TN" value="Tamilnadu" />
+				<entry key="TN" value="Tamil" />
+			</map>
+    	</property>
+ 	</bean>
+     
+</beans>
