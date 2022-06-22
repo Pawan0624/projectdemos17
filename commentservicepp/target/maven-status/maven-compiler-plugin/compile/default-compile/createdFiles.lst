@@ -1,0 +1,6 @@
+com\example\commentservice\repo\CommentsRepository.class
+com\example\commentservice\service\CommentService.class
+com\example\commentservice\service\CommentServiceImpl.class
+com\example\commentservice\model\Comments.class
+com\example\commentservice\CommentserviceppApplication.class
+com\example\commentservice\controller\CommentsController.class
