@@ -52,4 +52,10 @@ public class NoteServiceImpl implements NoteService {
 		return data;
 	}
 
+	@Override
+	public String getCommentServicePort() {
+		// TODO Auto-generated method stub
+		return proxy.getPort();
+	}
+
 }

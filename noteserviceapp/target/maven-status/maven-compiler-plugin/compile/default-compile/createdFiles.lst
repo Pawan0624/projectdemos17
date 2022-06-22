@@ -1,0 +1,8 @@
+com\example\noteservice\model\Notes.class
+com\example\noteservice\service\NoteServiceImpl.class
+com\example\noteservice\controller\NotesController.class
+com\example\noteservice\NoteserviceappApplication.class
+com\example\noteservice\model\CommentsDto.class
+com\example\noteservice\repo\NotesRepository.class
+com\example\noteservice\service\NoteService.class
+com\example\noteservice\service\NoteProxyService.class

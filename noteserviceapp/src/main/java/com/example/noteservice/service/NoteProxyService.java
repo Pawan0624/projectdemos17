@@ -15,4 +15,7 @@ public interface NoteProxyService {
 	@GetMapping("comments/searchOnPid/{pid}")
 	public List<CommentsDto> searchNotesByPid(@PathVariable("pid") int  pid);
 	
+	@GetMapping("/comments/port")
+	public String getPort();
+	
 }
