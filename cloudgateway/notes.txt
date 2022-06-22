@@ -1,0 +1,16 @@
+
+
+service1-----> service2 ------> service3 ------> service4 
+
+
+1. if any of the service is unavailable
+
+2. if any of the service is slow
+
+a. Retry
+b. fallback Method implementation
+c. threshold calls
+
+
+Resilience4j  
+
