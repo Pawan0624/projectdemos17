@@ -1,0 +1,12 @@
+ services:
+   databackend:
+     image: sripraveen/demoimage
+     build: .
+     ports:
+       - 8903:8900
+   discovery:
+     image: eureka
+     build: .
+     ports:
+       - 8761:8761
+       
